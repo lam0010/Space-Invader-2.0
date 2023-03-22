@@ -1,3 +1,0 @@
-# Space Invader 2.0
- 
-# I've been developing a game using Pygame from what I've learned from coding with Python over the past few weeks. During my journey of mastering Python, I've realized that Python can be useful for many different applications that could essentially make our lives much easier. In addition, I want to do something that is fun and challenging at the same time. Therefore, leading me to move out of my comfort zone and code a game (similar to the classic Space Invader 1978 ) as a fun small project to keep challenging myself and to keep learning this programming language even further.
