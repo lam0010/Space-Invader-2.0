@@ -6,6 +6,7 @@ import pygame
 import os
 import time
 import random
+pygame.font.init()
 
 WIDTH, HEIGHT = 850, 850
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -32,11 +33,22 @@ BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join("images", "ba
 def main():
     run = True
     FPS = 60
+    level = 1
+    lives = 5
+    main_font = pygame.font.SysFont("arialblack", 50)
+
     clock = pygame.time.Clock()
 
 # Drawing the background...
     def redraw_window():
         WIN.blit(BACKGROUND, (0,0))
+        # Draw Text
+        lives_label = main_font.render(f"Lives: {lives}", 1, (255,255,255))
+        level_label = main_font.render(f"Level: {level}", 1, (255,255,255))
+
+        WIN.blit(lives_label, (10, 10))
+        WIN.blit(level_label, (WIDTH - level_label.get_width() - 10, 10))
+
         pygame.display.update()
 
     while run:
@@ -49,5 +61,3 @@ def main():
                 run = False
 
 main()
-
-teset steaf 
