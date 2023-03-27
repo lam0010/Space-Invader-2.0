@@ -1,4 +1,4 @@
-# Space Invader 1.0
+# Space Invader 2.0
 # Main File
 # By: Peerapat Lam (Jacky)
 
